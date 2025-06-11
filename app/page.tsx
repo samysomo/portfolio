@@ -1,4 +1,8 @@
+import { Approach } from "@/components/Approach";
+import Experience from "@/components/Experience";
+import Footer from "@/components/Footer";
 import { Hero } from "@/components/Hero";
+import { RecentProjects } from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import { navItems } from "@/data";
 
@@ -10,6 +14,10 @@ export default function Home() {
           navItems={navItems}
         />
         <Hero/>
+        <RecentProjects/>
+        <Experience/>
+        <Approach/>
+        <Footer/>
       </div>
     </main>
   );
