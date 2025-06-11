@@ -5,6 +5,12 @@ import { Hero } from "@/components/Hero";
 import { RecentProjects } from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import { navItems } from "@/data";
+import dynamic from "next/dynamic";
+
+const Grid = dynamic(
+  () => import('@/components/Grid').then(mod => mod.Grid),
+  { ssr: false }
+)
 
 export default function Home() {
   return (
@@ -14,6 +20,7 @@ export default function Home() {
           navItems={navItems}
         />
         <Hero/>
+        <Grid/>
         <RecentProjects/>
         <Experience/>
         <Approach/>
