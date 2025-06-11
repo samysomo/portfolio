@@ -75,7 +75,7 @@ export const navItems = [
       title: "Fresh Coffee - Digital food kiosk",
       des: "Restaurant ordering web application using Next.js and Prisma ORM",
       img: "/quiosco-image.png",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg",],
+      iconLists: ["/prisma-3.svg", "/next.svg", "/tail.svg", "/ts.svg", ],
       link: "https://fresh-coffee-kappa.vercel.app/",
     },
     {
@@ -83,7 +83,7 @@ export const navItems = [
       title: "Oxxo Inventory Management System",
       des: "Complete human resources and inventory management system with Next.js and NestJS",
       img: "/oxxo-image.png",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg",],
+      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/nestjs-icon.svg",],
       link: "https://ocsof.samysl.xyz",
     },
   ];
