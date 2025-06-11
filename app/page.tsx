@@ -1,4 +1,3 @@
-"use client"
 import { Hero } from "@/components/Hero";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import { Grid } from "@/components/Grid";
@@ -18,10 +17,6 @@ export default function Home() {
         />
         <Hero/>
         <Grid/>
-        <RecentProjects/>
-        {/* <Clients/>*/}
-        <Experience/> 
-        <Approach/>
         <Footer/>
       </div>
     </main>
