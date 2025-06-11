@@ -1,11 +1,19 @@
 "use client"
 import React from 'react'
-import { BentoGrid, BentoGridItem } from './ui/BentoGrid'
 import { gridItems } from '@/data'
+import dynamic from 'next/dynamic'
 
-type Props = {}
+const BentoGrid = dynamic(
+  () => import('../components/ui/BentoGrid').then(mod => mod.BentoGrid),
+  { ssr: false }
+)
 
-export const Grid = (props: Props) => {
+const BentoGridItem = dynamic(
+  () => import('../components/ui/BentoGrid').then(mod => mod.BentoGridItem),
+  { ssr: false }
+)
+
+export const Grid = () => {
   return (
     <section id='about'>
         <BentoGrid>
